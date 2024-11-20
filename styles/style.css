@@ -44,7 +44,7 @@ ol {
   display: flex;
   gap: 30px;
   min-width: 100%;
-  padding: 133px 30px 80px 30px;
+  padding: 133px 30px;
 }
 
 .result {
@@ -53,6 +53,8 @@ ol {
 
 .result__video-container {
   width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -111,12 +113,8 @@ ol {
   gap: 5px;
 }
 
-.search-form__label:has(:hover) {
+.search-form__label-text:hover {
   text-decoration: underline;
-}
-
-.search-form__label:has(:focus) {
-  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -206,6 +204,8 @@ ol {
 
 .content__video-card-description-container {
   width: 100%;
+  flex-grow: 1;
+  margin: 2px 2px 0;
 }
 
 .content__video-card-title {
@@ -215,6 +215,10 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   padding-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -276,4 +280,5 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-bottom: 1px;
 }
