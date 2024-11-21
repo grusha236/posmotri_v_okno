@@ -113,7 +113,7 @@ ol {
   gap: 5px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -230,8 +230,8 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
-  padding-right: 5px;
-}
+  flex-shrink: 0;
+ }
 
 .visually-hidden {
   position: absolute;
